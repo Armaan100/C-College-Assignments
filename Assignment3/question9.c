@@ -82,5 +82,62 @@ int main(){
 
     
     //7) HCF of two numbers
-    
+    int num7, num8, hcf;
+    printf("Enter number1: ");
+    scanf("%d", &num7);
+    printf("Enter number: ");
+    scanf("%d", &num8);
+
+    while(1){
+        if(num7<num8){
+            num8-=num7;
+        }
+        else if(num7>num8){
+            num7-=num8;
+        }
+
+        if(num7==0){
+            hcf=num8;
+            break;
+        }
+        else if(num8==0){
+            hcf=num7;
+            break;
+        }
+    }
+
+    printf("HCF is: %d", hcf);
+
+
+    //8)LCM of two numbers
+    //HCF(n1, n2)*LCM(n1, n2)=n1*n2
+
+    int num9, num10, hcf_f_lcm;
+    float lcm;
+    printf("Enter number1: ");
+    scanf("%d", &num9);
+    printf("Enter number: ");
+    scanf("%d", &num10);
+
+    while(1){
+        if(num9<num10){
+            num10-=num9;
+        }
+        else if(num9>num10){
+            num9-=num10;
+        }
+
+        if(num9==0){
+            hcf_f_lcm=num10;
+            break;
+        }
+        else if(num10==0){
+            hcf_f_lcm=num9;
+            break;
+        }
+    }
+
+    lcm=(float)(num9*num10)/hcf_f_lcm;
+    printf("%f", lcm);
+
 }
