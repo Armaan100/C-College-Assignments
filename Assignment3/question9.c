@@ -52,7 +52,7 @@ int main(){
 
     //4)Check if the input integer is an Armstrong number or not?
     int num4, sum;
-    printf('Enter number: ');
+    printf("Enter number: ");
     scanf("%d", &num4);
     int temp=num4;
     while(num4>0){
